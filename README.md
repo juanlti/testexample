@@ -4,8 +4,8 @@
 
  Si utilizan otra variable de entorno, ejemplo: .env.MyTesting, y no la de producion .env, es necesario realizar algunas modificaciones en el archivo
  phpunit.xml para que el testeo se ejecute sobre la variable  .MyTesting y se aplique en la bd, deben agregar lo siguiente:  
-       ***<env name="APP_ENV" value="testing"/>****
-        ***<env name="env" value=".env.MyTesting"/>***
+       *<**env name="APP_ENV" value="testing"**/>*
+        *<***env name="env" value=".env.MyTesting"***/>*
 
 
  Otra opcion, es realizar la configuracion por terminal (en ningun momento la configuracion global sufrira cambios), solo la instancia en ejecucion, unica desventaja, repeticion de comandos por cada accion a realizar, ejemplo:
